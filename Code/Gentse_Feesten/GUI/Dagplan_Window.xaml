@@ -1,0 +1,68 @@
+﻿<Window x:Class="GUI.Dagplan_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Dagplan_Window" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel>
+            <StackPanel VerticalAlignment="Top" Margin="20 10 20 5" Width="760" Height="345">
+                <TextBlock FontSize="20" FontWeight="Bold"><Underline>Dagplan:</Underline><TextBlock FontSize="14" FontWeight="Medium" Margin="5 0 0 0">selecteer 2 evenementen</TextBlock></TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                    <StackPanel Orientation="Vertical">
+                        <Label>Filter Titel:</Label>
+                        <TextBox HorizontalAlignment="Left" Margin="5 0 0 0" Width="200" x:Name="txtFilterTitel" TextChanged="txtFilterTitel_TextChanged" />
+                    </StackPanel>
+                    <!--<StackPanel Orientation="Vertical">
+                        <Label>Filter StartDatum: (yyyy-mm-dd)</Label>
+                        <TextBox HorizontalAlignment="Left" Margin="5 0 0 0" Width="200" x:Name="txtFilterStartDatum" TextChanged="txtFilterStartDatum_TextChanged" />
+                    </StackPanel>-->
+                </StackPanel>
+                <ListView x:Name="lvEvenement" Margin="0 15 0 0" SelectionMode="Multiple" Height="245" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="ID" 
+                                        Width="auto" 
+                                        DisplayMemberBinding="{Binding Id}" />
+                            <GridViewColumn Header="Title" 
+                                        Width="auto" 
+                                        DisplayMemberBinding="{Binding Titel}" />
+                            <GridViewColumn Header="Starttijd" 
+                                        Width="auto" 
+                                        DisplayMemberBinding="{Binding Starttijd}" />
+                            <GridViewColumn Header="Eindtijd" 
+                                        Width="auto" 
+                                        DisplayMemberBinding="{Binding Eindtijd}" />
+                            <GridViewColumn Header="Prijs" 
+                                        Width="auto" 
+                                        DisplayMemberBinding="{Binding Prijs}" />
+                            <GridViewColumn Header="beschrijving" 
+                                        Width="auto" 
+                                        DisplayMemberBinding="{Binding Beschrijving}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Bottom" Width="760" Height="50" Orientation="Horizontal">
+                <Button Width="250" Height="40" Margin="80 0 50 0" FontSize="18" FontWeight="Medium" Background="CornflowerBlue" BorderBrush="#324b77" BorderThickness="3" Click="Button_Click_1">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    Evenement Toevoegen
+                </Button>
+                <Button Width="250" Height="40" Margin="50 0 80 0" FontSize="18" FontWeight="Medium" Background="CornflowerBlue" BorderBrush="#324b77" BorderThickness="3" Click="Button_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                    Save Dagplan
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>

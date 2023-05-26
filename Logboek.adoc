@@ -1,0 +1,27 @@
+= *Logboek*
+
+== *Programmeren Gevorderd*
+
+[cols="10%,90%"]
+|===
+| Datum | Description
+
+| *16/05* | Designing WPF, ERD & DCD 
+| *19/05* | voorberijdingen op programma (alles klaar zetten zoals 3-lagen model enz.) 
+| *21/05* | WPF windows & pages maken 
+| *21/05* | DB aan maken & data Initilazeren. 
+| *21/05* | persistentie laag maken en voorbereiden.
+| *22/05* | nieuwe code geschreven om de data te lezen en te schrijven naar de DB.
+| *22/05* | Domeinlaag verder aangevuld (models, interfaces, DTOs & DomeinController)
+| *23/05* | Persistentie laag (evenementen uitlezen en naar DB schrijven) de errors weggewerkt
+| *25/05* | Persistentie laag dagplan gemaakt
+| *25/05* | Wpf dagplan window maken + de achter ligende code
+| *26/05* | Bonnus vraag gemaakt + nog wat kleine aanpassingen
+|         |
+| *26/05* | Indienen
+
+|=== 
+
+Totaale uren gewerkt: **98/uur**+-
+
+*Gemaakt door Jelle Vandriessche 1PROG 1B*

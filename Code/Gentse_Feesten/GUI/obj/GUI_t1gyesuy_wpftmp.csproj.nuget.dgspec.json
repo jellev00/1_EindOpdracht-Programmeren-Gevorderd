@@ -1,0 +1,201 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj": {}
+  },
+  "projects": {
+    "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj",
+        "projectName": "Domein",
+        "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj",
+        "packagesPath": "C:\\Users\\jelle\\.nuget\\packages\\",
+        "outputPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
+        "projectName": "GUI",
+        "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
+        "packagesPath": "C:\\Users\\jelle\\.nuget\\packages\\",
+        "outputPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj": {
+                "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj"
+              },
+              "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj": {
+                "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj",
+        "projectName": "Persistentie",
+        "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj",
+        "packagesPath": "C:\\Users\\jelle\\.nuget\\packages\\",
+        "outputPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj": {
+                "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

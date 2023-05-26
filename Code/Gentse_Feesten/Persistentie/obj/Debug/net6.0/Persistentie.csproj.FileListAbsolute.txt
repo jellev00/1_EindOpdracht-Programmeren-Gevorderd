@@ -1,0 +1,45 @@
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.deps.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.CopyComplete
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\refint\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\ref\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.deps.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.CopyComplete
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\refint\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\ref\Persistentie.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.deps.json
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Persistentie.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\bin\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.csproj.CopyComplete
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\refint\Persistentie.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\Persistentie.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Persistentie\obj\Debug\net6.0\ref\Persistentie.dll

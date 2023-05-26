@@ -1,0 +1,15 @@
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\bin\Debug\net6.0\CUI.deps.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\bin\Debug\net6.0\CUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\bin\Debug\net6.0\CUI.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\bin\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\bin\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.csproj.CopyComplete
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\refint\CUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\CUI.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\CUI\obj\Debug\net6.0\ref\CUI.dll

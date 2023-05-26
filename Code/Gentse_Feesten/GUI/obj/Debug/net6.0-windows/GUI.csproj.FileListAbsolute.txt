@@ -1,0 +1,217 @@
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.exe
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.deps.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\App.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.lref
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.g.resources
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\refint\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\ref\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Begin_Window.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Begin_Window.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Evenementen.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Gebruiker.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Evenementen.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Gebruiker.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Dagplan_Window.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Dagplan_Window.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Azure.Core.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Azure.Identity.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Memory.Data.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Persistentie.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.CopyComplete
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.exe
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.deps.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Azure.Core.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Azure.Identity.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Memory.Data.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Persistentie.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Persistentie.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Begin_Window.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Dagplan_Window.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Evenementen.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Gebruiker.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\App.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.lref
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Begin_Window.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Dagplan_Window.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Evenementen.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Gebruiker.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.g.resources
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.CopyComplete
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\refint\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\ref\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_DagplanGebruiker.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_DagplanGebruiker.baml
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.exe
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.deps.json
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\GUI.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Azure.Core.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Azure.Identity.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Memory.Data.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Domein.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Persistentie.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Domein.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\bin\Debug\net6.0-windows\Persistentie.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Begin_Window.g.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Dagplan_Window.g.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_DagplanGebruiker.g.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Evenementen.g.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Gebruiker.g.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\App.g.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI_MarkupCompile.lref
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Begin_Window.baml
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Dagplan_Window.baml
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_DagplanGebruiker.baml
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Evenementen.baml
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\Page_Gebruiker.baml
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.g.resources
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.csproj.CopyComplete
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\refint\GUI.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\ref\GUI.dll

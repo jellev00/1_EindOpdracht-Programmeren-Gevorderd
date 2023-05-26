@@ -1,0 +1,36 @@
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.deps.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\refint\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1 EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\ref\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.deps.json
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\refint\Domein.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\ref\Domein.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.deps.json
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\bin\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.csproj.AssemblyReference.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.AssemblyInfoInputs.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.AssemblyInfo.cs
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.csproj.CoreCompileInputs.cache
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\refint\Domein.dll
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\Domein.pdb
+D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\Domein\obj\Debug\net6.0\ref\Domein.dll

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\calendar.png" />
+    <None Remove="Images\planning.png" />
+    <None Remove="Images\user.png" />
+    <None Remove="Images\Welcome_Image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domein\Domein.csproj" />
+    <ProjectReference Include="..\Persistentie\Persistentie.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\calendar.png" />
+    <Resource Include="Images\planning.png" />
+    <Resource Include="Images\user.png" />
+    <Resource Include="Images\Welcome_Image.png" />
+  </ItemGroup>
+
+</Project>
