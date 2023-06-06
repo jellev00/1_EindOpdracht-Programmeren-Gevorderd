@@ -1,5 +1,6 @@
 ﻿using Domein;
 using Domein.DTOs;
+using Domein.Exceptions;
 using Domein.Models;
 using System;
 using System.Collections.Generic;
@@ -82,76 +83,30 @@ namespace GUI
             if (selectedDagplanDTO != null)
             {
                 _dc.VerwijderDagplan(selectedDagplanDTO.Id);
+                _dc.VerwijderEvenemetenVanDagplan(selectedDagplanDTO.Id);
                 RefreshGebruikerDagplanOvervieuw();
             }
         }
 
+        private static int _SelectedDagplanID;
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            // nieuwe folder aanmaken
-            string newFolder = "Genste_Feesten_VIP_Dagplannen";
+            DagplanDTO selectedDagplanDTO = lvDagplan.SelectedItem as DagplanDTO;
+            _SelectedDagplanID = selectedDagplanDTO.Id;
 
-            string path = System.IO.Path.Combine(
-                    Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
-                    newFolder
-                );
+            // Create the startup window
+            ToonDagplanGebruiker_Window ToonDagplanGebruikerW = new ToonDagplanGebruiker_Window(_dc);
+            // Do stuff here, e.g. to the window
+            ToonDagplanGebruikerW.Title = "Dagplan Gebruiker Info";
+            // Show the window
+            ToonDagplanGebruikerW.ShowDialog();
+        }
 
-            // kijken of de folder al bestaat of niet en anders moet hij gemaakt worden
-            if (!System.IO.File.Exists(path))
-            {
-                try
-                {
-                    System.IO.Directory.CreateDirectory(path);
-                    MessageBox.Show($"U kan de bestanden terug vinden op deze path {path}", "INFO" , MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-                catch (IOException ie)
-                {
-                    MessageBox.Show("IO Error", "IO Error" + ie.Message, MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("General Error", "General Error" + ex.Message, MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-
-            DagplanDTO selectedDagplanDTO = (lvDagplan.SelectedItem as DagplanDTO);
-
-
-
-            var dagplanId = selectedDagplanDTO.Id;
-
-            var gebruiker = _dc.GeefGebruiker(selectedDagplanDTO.GebruikerId);
-
-            string filePath = $@"{path}\{dagplanId}.adoc";
-
-            List<string> fileList = new List<string>();
-            fileList.Clear();
-
-            fileList.Add("= *Dagplan*");
-            fileList.Add(" ");
-            fileList.Add($"=== Dagplan Id {selectedDagplanDTO.Id}");
-            fileList.Add(" ");
-            fileList.Add("== *Gebruiker*");
-            fileList.Add($"{gebruiker.Id}: {gebruiker.Naam} {gebruiker.Voornaam}");
-            fileList.Add(" ");
-            fileList.Add("== *Datum*");
-            fileList.Add($"{selectedDagplanDTO.Datum}");
-            fileList.Add(" ");
-            fileList.Add("== *Evenement 1*");
-            fileList.Add($"{selectedDagplanDTO.Evenement1}");
-            fileList.Add(" ");
-            fileList.Add("== *Evenement 2*");
-            fileList.Add($"{selectedDagplanDTO.Evenement2}");
-
-            FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(fs);
-            sw.BaseStream.Seek(0, SeekOrigin.End);
-            foreach (string s in fileList)
-            {
-                sw.WriteLine(s);
-            }
-            sw.Flush();
-            sw.Close();
+        int dagplanId = _SelectedDagplanID;
+        public int selectedDagplan()
+        {
+            int Id = dagplanId;
+            return Id;
         }
     }
 }

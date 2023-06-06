@@ -7,6 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Diagnostics.Metrics;
+using System.Reflection;
 
 namespace Domein
 {
@@ -15,112 +18,207 @@ namespace Domein
         private IGebruikersRepo _repoG;
         private IEvenementenRepo _repoE;
         private IDagplanRepo _repoD;
+        private IDagplanEvenementenRepo _repoDE;
 
-        public DomeinController(IEvenementenRepo repoE, IGebruikersRepo repoG, IDagplanRepo repoD)
+        public DomeinController(IEvenementenRepo repoE, IGebruikersRepo repoG, IDagplanRepo repoD, IDagplanEvenementenRepo repoDE)
         {
             _repoE = repoE;
             _repoG = repoG;
             _repoD = repoD;
+            _repoDE = repoDE;
         }
 
-        public Dagplan MaakDagplan(int id, int gebruikerId, DateTime datum)
+        public void MaakDagplan(int id, int gebruikerId, DateTime datum)
         {
-            // Controleer of de gebruiker al een dagplan heeft voor de opgegeven datum
+            // Controleer of de gebruiker al een dagplan heeft voor dezelfde dag
             if (_repoD.BestaatDagplan(gebruikerId, datum))
             {
-                throw new DagplanException("Er bestaat al een dagplan voor de opgegeven gebruiker en datum.");
+                throw new DagplanException("Er bestaat al een dagplan voor deze dag.");
             }
 
-            // Haal de gebruiker op uit de DB
-            Gebruiker gebruiker = _repoG.GeefGebruiker(gebruikerId);
-            if (gebruiker == null)
-            {
-                throw new DagplanException("Gebruiker niet gevonden.");
-            }
-
-            // Maak een nieuw dagplan aan
-            Dagplan dagplan = new Dagplan(id, gebruikerId, datum)
-            {
-                Id = id,
-                GebruikerId = gebruikerId,
-                Datum = datum,
-                Gebruiker = gebruiker
-            };
-
+            // Maak het nieuwe dagplan aan
+            Dagplan dagplan = new Dagplan(id, gebruikerId, datum);
             _repoD.AddDagplan(dagplan);
-            return dagplan;
         }
 
-        public void VoegEvenementToeAanDagplan(int ID, int IDGebruiker, Dagplan dagplan, Evenement evenement1, Evenement evenement2)
+        public void VoegEvenementToeAanDagplan(int dagplanId, Evenement evenement)
         {
-            // Kijken of evenement 1 op de zelfde dag van het dagplan plaats vindt.
+            // Haal het dagplan en evenement op
+            Dagplan dagplan = _repoD.GeefDagplan(dagplanId);
+            Gebruiker gebruiker = _repoG.GeefGebruiker(dagplan.GebruikerId);
+            //Evenement evenement = _repoE.GeefEvenementen().FirstOrDefault(e => e.Id == evenementId);
 
-            var dagplanGebruiker = GeefDagplan(ID);
-
-            if (evenement1.Starttijd.Date != dagplanGebruiker.Datum)
+            if (dagplan == null || evenement == null)
             {
-                throw new DagplanException("Evenement 1 vindt niet plaats op de zelfde dag als het dagplan.");
+                throw new DagplanException("Ongeldig dagplan of evenement.");
             }
 
-            // Kijken of evenement 2 op de zelfde dag van het dagplan plaats vindt.
-            if (evenement2.Starttijd.Date != dagplan.Datum.Date)
+            // Controleer of het evenement al aanwezig is in het dagplan
+            foreach (DagplanEvenementenDTO evenementen in GeefEvenementenVanDagplan(dagplanId))
             {
-                throw new DagplanException("Evenement 2 vindt niet plaats op de zelfde dag als het dagplan.");
+                if (evenementen.Id == evenement.Id)
+                {
+                    throw new DagplanException("Dit evenement is al toegevoegd aan het dagplan.");
+                }
             }
 
-            // Kijken voor overlappende evenementen
-            if (OverlappingEvenementen(evenement1, evenement2))
+            //// Controleer of het evenement overlapt met andere evenementen in het dagplan
+            foreach (DagplanEvenementenDTO evenementen in GeefEvenementenVanDagplan(dagplanId))
             {
-                throw new DagplanException("De evenementen overlappen elkaar.");
+                if (OverlappingEvenementen(evenementen, evenement))
+                {
+                    throw new DagplanException("Dit evenement overlapt met een ander evenement in het dagplan.");
+
+                }
             }
 
-            // kijken of alle evenementen niet over het dagbudget zijn
-            decimal totaleKostPrijs = evenement1.Prijs + evenement2.Prijs;
-            Gebruiker gebruiker = _repoG.GeefGebruiker(IDGebruiker);
-            if (totaleKostPrijs > gebruiker.Prijs)
+            // Controleer of het evenement op dezelfde datum plaatsvindt als het dagplan
+            if (evenement.Starttijd.Date != dagplan.Datum.Date)
             {
-                throw new DagplanException("de prijs van de evenementen is hoger dan het dagbudget van de gebruiker.");
+                throw new DagplanException("Dit evenement vindt niet plaats op dezelfde datum als het dagplan.");
             }
 
-            string StringEvenement1 = $"{evenement1.Id}, {evenement1.Titel}, {evenement1.Starttijd}, {evenement1.Eindtijd}, {evenement1.Prijs}, {evenement1.Beschrijving}";
-            string StringEvenement2 = $"{evenement2.Id}, {evenement2.Titel}, {evenement2.Starttijd}, {evenement2.Eindtijd}, {evenement2.Prijs}, {evenement2.Beschrijving}";
+            // Controleer of er minstens 30 minuten tussen evenementen zitten
+            if (!IsErMinstens30MinutenVerschil(dagplanId, evenement))
+            {
+                throw new DagplanException("Er moet minstens 30 minuten tussen evenementen zitten.");
+            }
 
-            _repoD.UpdateDagplan(dagplan, StringEvenement1, StringEvenement2);
+            // Controleer of de totale kosten van de evenementen het beschikbare budget overschrijden
+            decimal totaleKosten = dagplan.Evenementen.Sum(e => e.Prijs) + evenement.Prijs;
+            if (totaleKosten > gebruiker.Prijs)
+            {
+                throw new DagplanException("De totale kosten van de evenementen overschrijden het beschikbare budget van het dagplan.");
+            }
 
-            // evenement toevoegen aan dagplan
-            dagplan.Evenementen.Add(evenement1);
-            dagplan.Evenementen.Add(evenement2);
+            // Voeg het evenement toe aan het dagplan
+            DagplanEvenementen dagplanEvenement = new DagplanEvenementen(dagplanId, evenement.Id, evenement.Titel, evenement.Eindtijd, evenement.Starttijd, evenement.Prijs, evenement.Beschrijving);
+            _repoDE.AddEvenement(dagplanEvenement);
         }
 
-        private bool OverlappingEvenementen(Evenement evenement1, Evenement evenement2)
+        private bool OverlappingEvenementen(DagplanEvenementenDTO evenement1, Evenement evenement2)
         {
-            return evenement1.Starttijd < evenement2.Eindtijd && evenement2.Starttijd < evenement1.Eindtijd;
+            return OverlappingEvenementen(evenement1, evenement2.Starttijd, evenement2.Eindtijd);
         }
 
-        // Verwijderen van een evenement van het dagplan
-        public void VerwijderEvenementVanDagplan(Dagplan dagplan, Evenement evenement)
+        private bool OverlappingEvenementen(DagplanEvenementenDTO evenement, DateTime starttijd, DateTime eindtijd)
         {
-            dagplan.Evenementen.Remove(evenement);
+            return (starttijd >= evenement.Starttijd && starttijd < evenement.Eindtijd) ||
+                   (eindtijd > evenement.Starttijd && eindtijd <= evenement.Eindtijd) ||
+                   (evenement.Starttijd >= starttijd && evenement.Starttijd < eindtijd) ||
+                   (evenement.Eindtijd > starttijd && evenement.Eindtijd <= eindtijd);
         }
-        
-         // Verwijderen van een dagplan
+
+        private bool IsErMinstens30MinutenVerschil(int dagplanId, Evenement nieuwEvenement)
+        {
+            List<DagplanEvenementenDTO> evenementen = GeefEvenementenVanDagplan(dagplanId);
+
+            foreach (DagplanEvenementenDTO evenement in evenementen)
+            {
+                var minuten1 = nieuwEvenement.Starttijd - evenement.Eindtijd;
+                var minuten2 = evenement.Starttijd - nieuwEvenement.Eindtijd;
+
+                if (evenement.Eindtijd < nieuwEvenement.Starttijd)
+                {
+                    if (minuten1.TotalMinutes < 30)
+                    {
+                        return false;
+                    }
+                } else if (nieuwEvenement.Eindtijd < evenement.Starttijd)
+                {
+                    if (minuten2.TotalMinutes < 30)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        //private bool IsErOverlap(DagplanEvenementenDTO evenement1, Evenement evenement2)
+        //{
+        //    DateTime starttijd1 = evenement1.Starttijd;
+        //    DateTime eindtijd1 = evenement1.Eindtijd;
+        //    DateTime starttijd2 = evenement2.Starttijd;
+        //    DateTime eindtijd2 = evenement2.Eindtijd;
+
+        //    // Controleer of er overlap is tussen de evenementen
+        //    bool isErOverlap = starttijd1 < eindtijd2 && starttijd2 < eindtijd1;
+
+        //    // Controleer of het tijdverschil minimaal 30 minuten is
+        //    if (isErOverlap)
+        //    {
+        //        int tijdverschilInMinuten = TijdverschilInMinuten(evenement1.Starttijd, evenement1.Eindtijd, evenement2.Starttijd, evenement2.Eindtijd);
+        //        return tijdverschilInMinuten < 30;
+        //    }
+
+        //    return false;
+        //}
+
+        //private int TijdverschilInMinuten(DateTime starttijd1, DateTime eindtijd1, DateTime starttijd2, DateTime eindtijd2)
+        //{
+        //    DateTime maxStarttijd = starttijd1 > starttijd2 ? starttijd1 : starttijd2;
+        //    DateTime minEindtijd = eindtijd1 < eindtijd2 ? eindtijd1 : eindtijd2;
+
+        //    TimeSpan overlappingTijd = minEindtijd - maxStarttijd;
+        //    return (int)overlappingTijd.TotalMinutes;
+        //}
+
+        //private bool IsErMinstens30MinutenVerschil(DagplanEvenementenDTO evenement1, Evenement evenement2)
+        //{
+        //    int tijdverschilInMinuten = TijdverschilInMinuten(evenement1, evenement2);
+        //    return tijdverschilInMinuten < 30;
+        //}
+
+        //private int TijdverschilInMinuten(DagplanEvenementenDTO evenement1, Evenement evenement2)
+        //{
+        //    return TijdverschilInMinuten(evenement1.Starttijd, evenement1.Eindtijd, evenement2.Starttijd, evenement2.Eindtijd);
+        //}
+
+        //private int TijdverschilInMinuten(DagplanEvenementenDTO evenement, DateTime starttijd, DateTime eindtijd)
+        //{
+        //    return TijdverschilInMinuten(evenement.Starttijd, evenement.Eindtijd, starttijd, eindtijd);
+        //}
+
+        //private int TijdverschilInMinuten(DateTime starttijd1, DateTime eindtijd1, DateTime starttijd2, DateTime eindtijd2)
+        //{
+        //    TimeSpan overlappingTijd = TimeSpan.Zero;
+
+        //    if (starttijd1 <= starttijd2 && eindtijd1 > starttijd2)
+        //    {
+        //        overlappingTijd = eindtijd1 - starttijd2;
+        //    }
+        //    else if (starttijd1 >= starttijd2 && starttijd1 < eindtijd2)
+        //    {
+        //        overlappingTijd = eindtijd2 - starttijd1;
+        //    }
+
+        //    return (int)overlappingTijd.TotalMinutes;
+        //}
+
+        // Verwijderen van een dagplan
         public void VerwijderDagplan(int dagplanId)
         {
             _repoD.DeleteDagplan(dagplanId);
         }
 
-        // De totale prijs berekenen
-        public decimal BerekenTotaleKostPrijs(Dagplan dagplan)
+        // Verwijderen Evenementen van Dagplan
+        public void VerwijderEvenemetenVanDagplan(int dagplanId)
         {
-            decimal totaleKostPrijs = dagplan.Evenementen.Sum(e => e.Prijs);
-            return totaleKostPrijs;
+            _repoDE.DeleteEvenementenOfDagplan(dagplanId);
+        }
+
+        public void VerwijderEvenementVanDagplan(string evenementId)
+        {
+            _repoDE.DeleteEvenementVanDagplan(evenementId);
         }
 
         // De dagplannen van een gebruiker opvragen
         public List<DagplanDTO> GeefDagplannenVoorGebruiker(int gebruikerId)
         {
             return _repoD.GeefDagplanVanGebruiker(gebruikerId)
-                .Select(Dagplan => new DagplanDTO(Dagplan.Id, Dagplan.GebruikerId, Dagplan.Datum, Dagplan.Evenement1, Dagplan.Evenement2))
+                .Select(Dagplan => new DagplanDTO(Dagplan.Id, Dagplan.GebruikerId, Dagplan.Datum))
                 .ToList();
         }
 
@@ -136,12 +234,6 @@ namespace Domein
             return dagplan;
         }
 
-        public decimal BerekenResterendDagbudget(Dagplan dagplan)
-        {
-            decimal resterendDagbudget = dagplan.Gebruiker.Prijs - BerekenTotaleKostPrijs(dagplan);
-            return resterendDagbudget;
-        }
-
         public List<GebruikerDTO> GeefGebruikers()
         {
             return _repoG.GeefGebruikers()
@@ -153,6 +245,13 @@ namespace Domein
         {
             return _repoE.GeefEvenementen()
                 .Select(evenement => new Evenement(evenement.Id, evenement.Titel, evenement.Eindtijd, evenement.Starttijd, evenement.Prijs, evenement.Beschrijving))
+                .ToList();
+        }
+
+        public List<DagplanEvenementenDTO> GeefEvenementenVanDagplan(int dagplanId)
+        {
+            return _repoDE.GeefEvenementenVanDagplan(dagplanId)
+                .Select(evenement => new DagplanEvenementenDTO(dagplanId, evenement.Id, evenement.Titel, evenement.Eindtijd, evenement.Starttijd, evenement.Prijs, evenement.Beschrijving))
                 .ToList();
         }
     }

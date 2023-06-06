@@ -3,7 +3,7 @@
 namespace Domein.Exceptions
 {
     [Serializable]
-    internal class DagplanException : Exception
+    public class DagplanException : Exception
     {
         public DagplanException()
         {

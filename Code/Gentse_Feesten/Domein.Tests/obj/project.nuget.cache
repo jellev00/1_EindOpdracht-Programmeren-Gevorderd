@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zEMxCf0LUxcqs+GNkMi/lElhihSKw/Y1A4GBdJJ94B+hDOliGD5BWAl/bhEFkkC2YTMAZXnSH2sfoIVH7Y1I4w==",
+  "dgSpecHash": "9kyLHAOIVkC8CcRN3qAzH17zXgE+Ck22J86+ol54c+VkDX+YRo11HbFB09ThL2FAy2biXZJfUVMMeUV6zIccXQ==",
   "success": true,
-  "projectFilePath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\Domein.Tests.csproj",
+  "projectFilePath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\Domein.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jelle\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jelle\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

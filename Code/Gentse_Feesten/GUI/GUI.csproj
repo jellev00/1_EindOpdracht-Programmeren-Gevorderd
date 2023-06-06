@@ -10,6 +10,7 @@
   <ItemGroup>
     <None Remove="Images\calendar.png" />
     <None Remove="Images\planning.png" />
+    <None Remove="Images\refresh.png" />
     <None Remove="Images\user.png" />
     <None Remove="Images\Welcome_Image.png" />
   </ItemGroup>
@@ -26,6 +27,7 @@
   <ItemGroup>
     <Resource Include="Images\calendar.png" />
     <Resource Include="Images\planning.png" />
+    <Resource Include="Images\refresh.png" />
     <Resource Include="Images\user.png" />
     <Resource Include="Images\Welcome_Image.png" />
   </ItemGroup>

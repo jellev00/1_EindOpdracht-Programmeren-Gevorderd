@@ -7668,11 +7668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\Domein.Tests.csproj",
+      "projectUniqueName": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\Domein.Tests.csproj",
       "projectName": "Domein.Tests",
-      "projectPath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\Domein.Tests.csproj",
+      "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\Domein.Tests.csproj",
       "packagesPath": "C:\\Users\\jelle\\.nuget\\packages\\",
-      "outputPath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\obj\\",
+      "outputPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7689,8 +7689,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj": {
-              "projectPath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj"
+            "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj": {
+              "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj"
             }
           }
         }

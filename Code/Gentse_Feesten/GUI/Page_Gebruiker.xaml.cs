@@ -16,6 +16,7 @@ using static GUI.Page_Evenementen;
 using Domein;
 using Domein.DTOs;
 using Domein.Models;
+using Domein.Exceptions;
 
 namespace GUI
 {
@@ -110,14 +111,21 @@ namespace GUI
             
             GebruikerDTO selectedGebruikerDTO = (lvGebruiker.SelectedItem as GebruikerDTO);
             var paresDatum = DateTime.Parse(cmbDatum.Text);
-            _dc.MaakDagplan(ID, selectedGebruikerDTO.Id, paresDatum);
+            try
+            {
+                _dc.MaakDagplan(ID, selectedGebruikerDTO.Id, paresDatum);
 
-            // Create the startup window
-            Dagplan_Window DagplanW = new Dagplan_Window(_dc);
-            // Do stuff here, e.g. to the window
-            DagplanW.Title = "Dagplan";
-            // Show the window
-            DagplanW.ShowDialog();
+                // Create the startup window
+                Dagplan_Window DagplanW = new Dagplan_Window(_dc);
+                // Do stuff here, e.g. to the window
+                DagplanW.Title = "Dagplan";
+                // Show the window
+                DagplanW.ShowDialog();
+            }
+            catch (DagplanException ex)
+            {
+                MessageBox.Show($"Fout bij het maken van het dagplan: {ex.Message}", "ERROR Dagplan", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

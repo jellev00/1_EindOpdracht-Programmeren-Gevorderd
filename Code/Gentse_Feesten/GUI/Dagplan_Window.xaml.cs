@@ -1,5 +1,6 @@
 ﻿using Domein;
 using Domein.DTOs;
+using Domein.Exceptions;
 using Domein.Models;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -77,35 +78,47 @@ namespace GUI
             int IDGebruiker = page_Gebruiker.GebruikersId();
             var dagplan = _dc.GeefDagplan(ID);
 
-            int count = 0;
-            Evenement evenement1 = null;
-            Evenement evenement2 = null;
             foreach (Evenement evenement in lvEvenement.SelectedItems)
             {
-                count++;
-                if (count == 1)
+                try
                 {
-                    evenement1 = evenement;
+                    _dc.VoegEvenementToeAanDagplan(ID, evenement);
                 }
-                else if (count == 2)
+                catch (DagplanException ex)
                 {
-                    evenement2 = evenement;
-                }
-                else if (count >= 3)
-                {
-                    MessageBox.Show("Er mogen maar 2 evenementen geselecteerd zijn", "ERROR Evenement", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
+                    MessageBox.Show($"Fout bij het toevoegen van een Evenement: {ex.Message}", "ERROR Evenement", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
 
-            if (evenement1 != null && evenement2 != null)
-            {
-                _dc.VoegEvenementToeAanDagplan(ID, IDGebruiker, dagplan, evenement1, evenement2);
-            }
-            else
-            {
-                MessageBox.Show("Selecteer 2 evenementen", "ERROR Evenement", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            //int count = 0;
+            //Evenement evenement1 = null;
+            //Evenement evenement2 = null;
+            //foreach (Evenement evenement in lvEvenement.SelectedItems)
+            //{
+            //    count++;
+            //    if (count == 1)
+            //    {
+            //        evenement1 = evenement;
+            //    }
+            //    else if (count == 2)
+            //    {
+            //        evenement2 = evenement;
+            //    }
+            //    else if (count >= 3)
+            //    {
+            //        MessageBox.Show("Er mogen maar 2 evenementen geselecteerd zijn", "ERROR Evenement", MessageBoxButton.OK, MessageBoxImage.Error);
+            //        return;
+            //    }
+            //}
+
+            //if (evenement1 != null && evenement2 != null)
+            //{
+            //    _dc.VoegEvenementToeAanDagplan(ID, IDGebruiker, dagplan, evenement1, evenement2);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Selecteer 2 evenementen", "ERROR Evenement", MessageBoxButton.OK, MessageBoxImage.Error);
+            //}
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

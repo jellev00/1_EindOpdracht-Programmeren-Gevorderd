@@ -2662,11 +2662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
+      "projectUniqueName": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
+      "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
       "packagesPath": "C:\\Users\\jelle\\.nuget\\packages\\",
-      "outputPath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\obj\\",
+      "outputPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jelle\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2683,11 +2683,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj": {
-              "projectPath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj"
+            "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj": {
+              "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Domein\\Domein.csproj"
             },
-            "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj": {
-              "projectPath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj"
+            "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj": {
+              "projectPath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj"
             }
           }
         }

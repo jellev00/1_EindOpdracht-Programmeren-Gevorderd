@@ -10,6 +10,9 @@
     <Compile Update="Begin_Window.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DagplanExtraEvenementen_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Dagplan_Window.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,9 +25,15 @@
     <Compile Update="Page_Gebruiker.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ToonDagplanGebruiker_Window.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Begin_Window.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DagplanExtraEvenementen_Window.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Dagplan_Window.xaml">
@@ -40,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Page_Gebruiker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ToonDagplanGebruiker_Window.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

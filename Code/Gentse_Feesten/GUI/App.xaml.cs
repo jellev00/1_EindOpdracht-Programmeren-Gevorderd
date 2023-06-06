@@ -21,8 +21,9 @@ namespace GUI
             IGebruikersRepo gebruikerRepo = new GebruikerRepoDb(@"Data Source =.\SQLEXPRESS;Initial Catalog = GentseFeestenDB; Integrated Security = True; TrustServerCertificate=True");
             IEvenementenRepo evenementRepo = new EvenementRepoDb(@"Data Source =.\SQLEXPRESS;Initial Catalog = GentseFeestenDB; Integrated Security = True; TrustServerCertificate=True");
             IDagplanRepo dagplanRepo = new DagplanRepoDb(@"Data Source =.\SQLEXPRESS;Initial Catalog = GentseFeestenDB; Integrated Security = True; TrustServerCertificate=True");
+            IDagplanEvenementenRepo dagplanEvenementenRepo = new DagplanEvenmentenRepoDb(@"Data Source =.\SQLEXPRESS;Initial Catalog = GentseFeestenDB; Integrated Security = True; TrustServerCertificate=True");
 
-            DomeinController dc = new DomeinController(evenementRepo, gebruikerRepo, dagplanRepo);
+            DomeinController dc = new DomeinController(evenementRepo, gebruikerRepo, dagplanRepo, dagplanEvenementenRepo);
 
             // Create the startup window
             MainWindow wnd = new MainWindow(dc);

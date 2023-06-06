@@ -15,6 +15,6 @@ namespace Domein.Interfaces
         List<DagplanDTO> GeefDagplanVanGebruiker(int gebruikerId);
         void AddDagplan(Dagplan dagplan);
         void DeleteDagplan(int dagplanId);
-        void UpdateDagplan(Dagplan dagplan, string evenement1, string evenement2);
+        void UpdateDagplan(Dagplan dagplan);
     }
 }

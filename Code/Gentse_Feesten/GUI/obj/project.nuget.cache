@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6iD9gel1A0wn1Fhj0C2SQ5V9SkgEp8C2C6yHxmmJA5Ckv4tbnMuSMMDYhXdutcAfb79fy6Ia04Ube5GMXllhHA==",
+  "dgSpecHash": "WzKt8N7G7LQ7CR8ch1ZNveOmmfzE/BotOuQnd+k1AE3+uEApvZuNgeclKCqlq5c5R8KVPatiajOFOmUHQxBzZQ==",
   "success": true,
-  "projectFilePath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
+  "projectFilePath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\GUI\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jelle\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jelle\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

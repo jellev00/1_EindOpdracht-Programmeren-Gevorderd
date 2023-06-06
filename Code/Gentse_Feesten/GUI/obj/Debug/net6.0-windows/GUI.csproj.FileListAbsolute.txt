@@ -215,3 +215,7 @@ D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feeste
 D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.pdb
 D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 D:\Hogent\Semester_2\PG\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\ref\GUI.dll
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\ToonDagplanGebruiker_Window.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\ToonDagplanGebruiker_Window.baml
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\DagplanExtraEvenementen_Window.g.cs
+D:\Hogent\Semester_2\PG\EindOpdracht\1_EindOpdracht-Programmeren-Gevorderd\Code\Gentse_Feesten\GUI\obj\Debug\net6.0-windows\DagplanExtraEvenementen_Window.baml

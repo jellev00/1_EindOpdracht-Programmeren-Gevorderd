@@ -153,10 +153,8 @@ namespace Persistentie
                         {
                             int id = (int)reader["Id"];
                             DateTime datum = (DateTime)reader["Datum"];
-                            string evenement1 = (string)reader["Evenement1"];
-                            string evenement2 = (string)reader["Evenement2"];
 
-                            DagplanDTO dagplan = new DagplanDTO(id, gebruikerId, datum, evenement1, evenement2);
+                            DagplanDTO dagplan = new DagplanDTO(id, gebruikerId, datum);
                             dagplannen.Add(dagplan);
                         }
                     }
@@ -170,7 +168,7 @@ namespace Persistentie
             return dagplannen;
         }
 
-        public void UpdateDagplan(Dagplan dagplan, string evenement1, string evenement2)
+        public void UpdateDagplan(Dagplan dagplan)
         {
             try
             {
@@ -182,8 +180,6 @@ namespace Persistentie
                     SqlCommand command = new(updateSQL, connection);
 
                     command.Parameters.AddWithValue("@Id", dagplan.Id);
-                    command.Parameters.AddWithValue("@Evenement1", evenement1);
-                    command.Parameters.AddWithValue("@Evenement2", evenement2);
 
                     command.ExecuteNonQuery();
                 }

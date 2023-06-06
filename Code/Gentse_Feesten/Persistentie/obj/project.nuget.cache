@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TnUf/XoKb7IBmQjqjZT6ghLTry/bg5T4Cn2IgArpres+MvGJoeneqpWBUSU245IYQSbWA3GIto72hBb5G8xGMw==",
+  "dgSpecHash": "8+FcBnqoe8y1QrmUS5sncwF+2PX+7AoQHotlOWN8hfU1qay27IxgQcJMR/zuU1ssubQ5L80EzwYHk5nZCw8VJg==",
   "success": true,
-  "projectFilePath": "D:\\Hogent\\Semester_2\\PG\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj",
+  "projectFilePath": "D:\\Hogent\\Semester_2\\PG\\EindOpdracht\\1_EindOpdracht-Programmeren-Gevorderd\\Code\\Gentse_Feesten\\Persistentie\\Persistentie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jelle\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\jelle\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

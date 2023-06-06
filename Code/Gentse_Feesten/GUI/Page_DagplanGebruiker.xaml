@@ -46,12 +46,6 @@
                             <GridViewColumn Header="Datum" 
                                         Width="auto" 
                                         DisplayMemberBinding="{Binding Datum}" />
-                            <GridViewColumn Header="Evenement 1" 
-                                        Width="auto" 
-                                        DisplayMemberBinding="{Binding Evenement1}" />
-                            <GridViewColumn Header="Evenement 2" 
-                                        Width="auto" 
-                                        DisplayMemberBinding="{Binding Evenement2}" />
                         </GridView>
                     </ListView.View>
                 </ListView>
@@ -63,7 +57,7 @@
                             <Setter Property="CornerRadius" Value="10"/>
                         </Style>
                     </Button.Resources>
-                    Download Dagplan
+                    Toon Dagplan
                 </Button>
 
                 <Button Height="30" Width="180" Margin="10 10 20 10" Background="CornflowerBlue" FontSize="14" FontWeight="Medium" BorderBrush="#324b77" BorderThickness="2" Click="Button_Click">

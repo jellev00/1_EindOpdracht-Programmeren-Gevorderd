@@ -20,7 +20,7 @@
                         <TextBox HorizontalAlignment="Left" Margin="5 0 0 0" Width="200" x:Name="txtFilterStartDatum" TextChanged="txtFilterStartDatum_TextChanged" />
                     </StackPanel>-->
                 </StackPanel>
-                <ListView x:Name="lvEvenement" Margin="0 15 0 0" SelectionMode="Multiple" Height="245" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                <ListView x:Name="lvEvenement" Margin="0 15 0 0" SelectionMode="Single" Height="245" ScrollViewer.HorizontalScrollBarVisibility="Visible">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn Header="ID" 
