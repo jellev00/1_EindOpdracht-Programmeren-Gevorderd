@@ -136,67 +136,6 @@ namespace Domein
             return true;
         }
 
-        //private bool IsErOverlap(DagplanEvenementenDTO evenement1, Evenement evenement2)
-        //{
-        //    DateTime starttijd1 = evenement1.Starttijd;
-        //    DateTime eindtijd1 = evenement1.Eindtijd;
-        //    DateTime starttijd2 = evenement2.Starttijd;
-        //    DateTime eindtijd2 = evenement2.Eindtijd;
-
-        //    // Controleer of er overlap is tussen de evenementen
-        //    bool isErOverlap = starttijd1 < eindtijd2 && starttijd2 < eindtijd1;
-
-        //    // Controleer of het tijdverschil minimaal 30 minuten is
-        //    if (isErOverlap)
-        //    {
-        //        int tijdverschilInMinuten = TijdverschilInMinuten(evenement1.Starttijd, evenement1.Eindtijd, evenement2.Starttijd, evenement2.Eindtijd);
-        //        return tijdverschilInMinuten < 30;
-        //    }
-
-        //    return false;
-        //}
-
-        //private int TijdverschilInMinuten(DateTime starttijd1, DateTime eindtijd1, DateTime starttijd2, DateTime eindtijd2)
-        //{
-        //    DateTime maxStarttijd = starttijd1 > starttijd2 ? starttijd1 : starttijd2;
-        //    DateTime minEindtijd = eindtijd1 < eindtijd2 ? eindtijd1 : eindtijd2;
-
-        //    TimeSpan overlappingTijd = minEindtijd - maxStarttijd;
-        //    return (int)overlappingTijd.TotalMinutes;
-        //}
-
-        //private bool IsErMinstens30MinutenVerschil(DagplanEvenementenDTO evenement1, Evenement evenement2)
-        //{
-        //    int tijdverschilInMinuten = TijdverschilInMinuten(evenement1, evenement2);
-        //    return tijdverschilInMinuten < 30;
-        //}
-
-        //private int TijdverschilInMinuten(DagplanEvenementenDTO evenement1, Evenement evenement2)
-        //{
-        //    return TijdverschilInMinuten(evenement1.Starttijd, evenement1.Eindtijd, evenement2.Starttijd, evenement2.Eindtijd);
-        //}
-
-        //private int TijdverschilInMinuten(DagplanEvenementenDTO evenement, DateTime starttijd, DateTime eindtijd)
-        //{
-        //    return TijdverschilInMinuten(evenement.Starttijd, evenement.Eindtijd, starttijd, eindtijd);
-        //}
-
-        //private int TijdverschilInMinuten(DateTime starttijd1, DateTime eindtijd1, DateTime starttijd2, DateTime eindtijd2)
-        //{
-        //    TimeSpan overlappingTijd = TimeSpan.Zero;
-
-        //    if (starttijd1 <= starttijd2 && eindtijd1 > starttijd2)
-        //    {
-        //        overlappingTijd = eindtijd1 - starttijd2;
-        //    }
-        //    else if (starttijd1 >= starttijd2 && starttijd1 < eindtijd2)
-        //    {
-        //        overlappingTijd = eindtijd2 - starttijd1;
-        //    }
-
-        //    return (int)overlappingTijd.TotalMinutes;
-        //}
-
         // Verwijderen van een dagplan
         public void VerwijderDagplan(int dagplanId)
         {

@@ -1,8 +1,5 @@
-﻿using System.Runtime.Serialization;
-
-namespace Domein.Exceptions
+﻿namespace Domein.Exceptions
 {
-    [Serializable]
     public class DagplanException : Exception
     {
         public DagplanException()
@@ -10,14 +7,6 @@ namespace Domein.Exceptions
         }
 
         public DagplanException(string? message) : base(message)
-        {
-        }
-
-        public DagplanException(string? message, Exception? innerException) : base(message, innerException)
-        {
-        }
-
-        protected DagplanException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
     }

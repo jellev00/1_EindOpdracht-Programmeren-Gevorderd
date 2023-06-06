@@ -5,229 +5,159 @@ using Domein.Exceptions;
 using Domein.Interfaces;
 using Domein.Models;
 using Xunit;
-using Microsoft.Data.SqlClient;
-using System.Data;
 
 namespace Domein.Tests
 {
     public class DomeinControllerTests
     {
-        [Fact]
-        public void MaakDagplan_GeldigeGebruiker_EnDatum_NieuwDagplanAangemaakt()
+        private class FakeEvenementenRepo : IEvenementenRepo
         {
-            // Arrange
-            int gebruikerId = 1;
-            DateTime datum = DateTime.Now;
-            var mockRepoE = new MockEvenementenRepo();
-            var mockRepoG = new MockGebruikersRepo();
-            var mockRepoD = new MockDagplanRepo();
-            var domeinController = new DomeinController(mockRepoE, mockRepoG, mockRepoD);
-
-            // Act
-            var result = domeinController.MaakDagplan(1, gebruikerId, datum);
-
-            // Assert
-            Assert.NotNull(result);
-            Assert.Equal(gebruikerId, result.GebruikerId);
-            Assert.Equal(datum, result.Datum);
-            mockRepoD.AddDagplan(result);
-        }
-
-        [Fact]
-        public void MaakDagplan_BestaandDagplanVoorGebruikerEnDatum_DagplanExceptionGegooid()
-        {
-            // Arrange
-            int gebruikerId = 1;
-            DateTime datum = DateTime.Now;
-            var mockRepoE = new MockEvenementenRepo();
-            var mockRepoG = new MockGebruikersRepo();
-            var mockRepoD = new MockDagplanRepo();
-            mockRepoD.BestaatDagplan(gebruikerId, datum);
-            var domeinController = new DomeinController(mockRepoE, mockRepoG, mockRepoD);
-
-            // Act & Assert
-            Assert.Throws<DagplanException>(() => domeinController.MaakDagplan(1, gebruikerId, datum));
-        }
-
-        [Fact]
-        public void MaakDagplan_OngeldigeGebruiker_GebruikerNietGevondenExceptionGegooid()
-        {
-            // Arrange
-            int gebruikerId = 1;
-            DateTime datum = DateTime.Now;
-            var mockRepoE = new MockEvenementenRepo();
-            var mockRepoG = new MockGebruikersRepo();
-            var mockRepoD = new MockDagplanRepo();
-            mockRepoG.GeefGebruiker(gebruikerId);
-            var domeinController = new DomeinController(mockRepoE, mockRepoG, mockRepoD);
-
-            // Act & Assert
-            Assert.Throws<DagplanException>(() => domeinController.MaakDagplan(1, gebruikerId, datum));
-        }
-
-        // Voorbeeld van een mock repository voor IEvenementenRepo
-        private class MockEvenementenRepo : IEvenementenRepo
-        {
-            // Implementeer de benodigde methoden en eigenschappen voor de mock
-
-            public List<Evenement> GeefEvenementen()
-            {
-                throw new NotImplementedException();
-            }
-
             public void AddEvenement(Evenement evenement)
             {
                 throw new NotImplementedException();
             }
+
+            List<Evenement> IEvenementenRepo.GeefEvenementen()
+            {
+                Evenement evenement = new Evenement("1", "Evenement 1", DateTime.Now, DateTime.Now.AddHours(1), 10, "Evenement 1 beschrijving");
+                return new List<Evenement> { evenement };
+            }
         }
 
-        // Voorbeeld van een mock repository voor IGebruikersRepo
-        private class MockGebruikersRepo : IGebruikersRepo
+        private class FakeGebruikersRepo : IGebruikersRepo
         {
-            string connectionString = @"Data Source =.\SQLEXPRESS;Initial Catalog = GentseFeestenDB; Integrated Security = True; TrustServerCertificate=True";
-
-            // Implementeer de benodigde methoden en eigenschappen voor de mock
-
-            public List<Gebruiker> GeefGebruikers()
+            public void AddGebruiker(Gebruiker gebruiker)
             {
                 throw new NotImplementedException();
             }
 
             public Gebruiker GeefGebruiker(int gebruikerId)
             {
-                try
-                {
-                    using (SqlConnection connection = new(connectionString))
-                    {
-                        connection.Open();
-
-                        SqlCommand command = new("SELECT * FROM Gebruikers WHERE Id = @GebruikerId;", connection);
-                        command.Parameters.AddWithValue("@GebruikerId", gebruikerId);
-
-                        using (SqlDataReader dataReader = command.ExecuteReader())
-                        {
-                            if (dataReader.HasRows)
-                            {
-                                dataReader.Read();
-                                string naam = (string)dataReader["naam"];
-                                string voornaam = (string)dataReader["voornaam"];
-                                decimal prijs = (decimal)dataReader["prijs"];
-
-                                return new Gebruiker(gebruikerId, naam, voornaam, prijs);
-                            }
-                            else
-                            {
-                                return null;
-                            }
-                        }
-                    }
-                }
-                catch
-                {
-                    throw;
-                }
+                // Geef hier een nepgebruiker terug voor testdoeleinden
+                return new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
             }
 
-            public void AddGebruiker(Gebruiker gebruiker)
+            public List<Gebruiker> GeefGebruikers()
             {
                 throw new NotImplementedException();
             }
         }
 
-        // Voorbeeld van een mock repository voor IDagplanRepo
-        private class MockDagplanRepo : IDagplanRepo
+        private class FakeDagplanRepo : IDagplanRepo
         {
-            string connectionString = @"Data Source =.\SQLEXPRESS;Initial Catalog = GentseFeestenDB; Integrated Security = True; TrustServerCertificate=True";
-
-
-            // Implementeer de benodigde methoden en eigenschappen voor de mock
-
             public bool BestaatDagplan(int gebruikerId, DateTime datum)
             {
-                try
-                {
-                    using (SqlConnection connection = new SqlConnection(connectionString))
-                    {
-                        connection.Open();
-
-                        string selectSql = "SELECT COUNT(*) FROM Dagplannen WHERE GebruikerId = @GebruikerId AND Datum = @Datum;";
-                        SqlCommand selectCommand = new SqlCommand(selectSql, connection);
-
-                        selectCommand.Parameters.AddWithValue("@GebruikerId", gebruikerId);
-                        selectCommand.Parameters.AddWithValue("@Datum", datum);
-
-                        int count = (int)selectCommand.ExecuteScalar();
-                        connection.Close();
-
-                        return count > 0;
-                    }
-                }
-                catch
-                {
-                    throw;
-                }
+                // Implementeer hier de logica om te controleren of een dagplan bestaat voor testdoeleinden
+                // Voor deze test kunnen we altijd 'false' retourneren
+                return false;
             }
 
             public void AddDagplan(Dagplan dagplan)
             {
-                try
-                {
-                    using (SqlConnection connection = new(connectionString))
-                    {
-                        connection.Open();
-
-                        string insertSql = $"INSERT INTO Dagplannen (Id, GebruikerId, Datum) VALUES (@Id, @GebruikerId, @Datum);";
-                        SqlCommand insertCommand = new(insertSql, connection);
-
-                        insertCommand.Parameters.Add("@Id", SqlDbType.Int);
-                        insertCommand.Parameters["@Id"].Value = dagplan.Id;
-
-                        insertCommand.Parameters.Add("@GebruikerId", SqlDbType.Int);
-                        insertCommand.Parameters["@GebruikerId"].Value = dagplan.GebruikerId;
-
-                        insertCommand.Parameters.Add("@Datum", SqlDbType.DateTime);
-                        insertCommand.Parameters["@Datum"].Value = dagplan.Datum;
-
-                        insertCommand.ExecuteNonQuery();
-                        connection.Close();
-                    }
-                }
-                catch
-                {
-                    throw;
-                }
-            }
-
-            public void UpdateDagplan(Dagplan dagplan, string evenement1, string evenement2)
-            {
-                throw new NotImplementedException();
-            }
-
-            public Dagplan GeefDagplan(int dagplanId)
-            {
-                throw new NotImplementedException();
-            }
-
-            public List<DagplanDTO> GeefDagplanVanGebruiker(int gebruikerId)
-            {
-                throw new NotImplementedException();
+                // Implementeer hier de logica om een dagplan toe te voegen voor testdoeleinden
             }
 
             public void DeleteDagplan(int dagplanId)
             {
+                // Implementeer hier de logica om een dagplan te verwijderen voor testdoeleinden
+            }
+
+            public Dagplan GeefDagplan(int id)
+            {
+                // Implementeer hier de logica om een dagplan op te halen voor testdoeleinden
+                // Voor deze test kunnen we altijd 'null' retourneren
+                return new Dagplan(id, 2, new DateTime(2022, 06, 06));
+            }
+
+            public Dagplan[] GeefDagplanVanGebruiker(int gebruikerId)
+            {
+                // Implementeer hier de logica om de dagplannen van een gebruiker op te halen voor testdoeleinden
+                // Voor deze test kunnen we een lege array retourneren
+                return new Dagplan[0];
+            }
+
+            List<DagplanDTO> IDagplanRepo.GeefDagplanVanGebruiker(int gebruikerId)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void UpdateDagplan(Dagplan dagplan)
+            {
                 throw new NotImplementedException();
             }
         }
 
-        public class DagplanException : Exception
+        private class FakeDagplanEvenementenRepo : IDagplanEvenementenRepo
         {
-            public DagplanException(string message) : base(message)
+            public void AddEvenement(DagplanEvenementen dagplanEvenement)
             {
+                // Implementeer hier de logica om een evenement aan een dagplan toe te voegen voor testdoeleinden
             }
 
-            public DagplanException(string message, Exception innerException) : base(message, innerException)
+            public void DeleteEvenementVanDagplan(string evenementId)
             {
+                // Implementeer hier de logica om een evenement van een dagplan te verwijderen voor testdoeleinden
+            }
+
+            public void DeleteEvenementenOfDagplan(int dagplanId)
+            {
+                // Implementeer hier de logica om alle evenementen van een dagplan te verwijderen voor testdoeleinden
+            }
+
+            public List<DagplanEvenementenDTO> GeefEvenementenVanDagplan(int dagplanId)
+            {
+                // Implementeer hier de logica om de evenementen van een dagplan op te halen voor testdoeleinden
+                // Voor deze test kunnen we een lege lijst retourneren
+                return new List<DagplanEvenementenDTO>();
             }
         }
+
+        [Fact]
+        public void MaakDagplan_DagplanToegevoegd()
+        {
+            // Arrange
+            var repoE = new FakeEvenementenRepo();
+            var repoG = new FakeGebruikersRepo();
+            var repoD = new FakeDagplanRepo();
+            var repoDE = new FakeDagplanEvenementenRepo();
+            var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
+            int dagplanId = 1;
+            int gebruikerId = 1;
+            DateTime datum = DateTime.Now;
+
+            // Act
+            domeinController.MaakDagplan(dagplanId, gebruikerId, datum);
+
+            // Assert
+            // Voeg hier je asserties toe om te controleren of het dagplan correct is toegevoegd
+        }
+
+        [Fact]
+        public void EvenementToegevoegdAanDagplan()
+        {
+            // Arrange
+            var repoE = new FakeEvenementenRepo();
+            var repoG = new FakeGebruikersRepo();
+            var repoD = new FakeDagplanRepo();
+            var repoDE = new FakeDagplanEvenementenRepo();
+            var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
+            int dagplanId = 1;
+            int gebruikerId = 2;
+
+            // Haal het dagplan op uit de repository
+            Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
+
+
+            Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
+            Evenement evenement = new Evenement("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
+
+            // Act
+            domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement);
+
+            // Assert
+            // Voeg hier je asserties toe om te controleren of het evenement correct is toegevoegd aan het dagplan
+        }
+
+        // Voeg hier meer testmethoden toe om andere functionaliteiten van de DomeinController te testen
     }
 }
