@@ -22,7 +22,11 @@ Dit is een applicatie gemaakt voor de VIP's van de Gentse Feesten
 ![Evenement](./Images/Evenement.png)
 
 ## Gebruikers Dagplan scherm
-### Hier kan de gebruiker al zijn dagplannen zien die hij/zij heeft gemaakt en hij/zij kan de dagplannen verwijderen of downloaden naar een externe folder op de Desktop van de Gebruiker.
+### Hier kan de gebruiker al zijn dagplannen zien die hij/zij heeft gemaakt en hij/zij kan de dagplannen verwijderen of kan een specifiek Dagplan tonen op een nieuw scherm waar hij/zij de evenementen van dat dagplan kunnen zien
 ![Evenement](./Images/Gebruiker_Dagplan.png)
+
+## Specifiek Dagplan Van een Gebruiker
+### Hier kan de gebruiker een specifiek dagplan zien met alle evenementen die op dat dagplan staan. Hij/zij kan dan een of meerdere evenementen verwijderen of ook exrta evenementen toevoegen en de gebruiker kan het dagplan ook download op zijn Desktop. Er is ook een refresh knop om de lijst met evenementen te refreshen nadat er evenementen zij toegevoegd.
+![Evenement](./Images/Dagplan_Van_Gebruiker.png)
 
 > Dit is gemaakt door Jelle Vandriessche
