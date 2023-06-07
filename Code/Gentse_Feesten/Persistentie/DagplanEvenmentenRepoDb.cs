@@ -13,20 +13,42 @@ namespace Persistentie
 {
     public class DagplanEvenmentenRepoDb : IDagplanEvenementenRepo
     {
+        int rndNumb;
         private string _connectionString;
         public DagplanEvenmentenRepoDb(string connectionString)
         {
             _connectionString = connectionString;
         }
-        public void AddEvenement(DagplanEvenementen dagplanEvenementen)
+
+        private void countTabel(int dagplanId)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
 
-                string query = "INSERT INTO DagplanEvenementen (DagplanId, Id, Titel, Eindtijd, Starttijd, Prijs, Beschrijving) VALUES (@DagplanId, @Id, @Titel, @Eindtijd, @Starttijd, @Prijs, @Beschrijving)";
+                string query = "SELECT COUNT(*) FROM DagplanEvenementen WHERE DagplanId = @DagplanID";
+                SqlCommand selectCommand = new SqlCommand(query, connection);
+                selectCommand.Parameters.AddWithValue("@DagplanID", dagplanId);
+                int count = (int)selectCommand.ExecuteScalar();
+                rndNumb = count;
+
+                connection.Close();
+            }
+        }
+        public void AddEvenement(DagplanEvenementen dagplanEvenementen)
+        {
+            countTabel(dagplanEvenementen.DagplanID);
+            string rndNumbstring = $"{dagplanEvenementen.DagplanID}.{rndNumb}";
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                string query = "INSERT INTO DagplanEvenementen (rndId, DagplanId, Id, Titel, Eindtijd, Starttijd, Prijs, Beschrijving) VALUES (@rndId, @DagplanId, @Id, @Titel, @Eindtijd, @Starttijd, @Prijs, @Beschrijving)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
+                    command.Parameters.AddWithValue("@rndId", SqlDbType.VarChar);
+                    command.Parameters["@rndId"].Value = rndNumbstring;
+
                     command.Parameters.AddWithValue("@DagplanId", SqlDbType.Int);
                     command.Parameters["@DagplanId"].Value = dagplanEvenementen.DagplanID;
 
@@ -116,7 +138,7 @@ namespace Persistentie
             }
         }
 
-        public void DeleteEvenementVanDagplan(string EvenementId)
+        public void DeleteEvenementVanDagplan(int dagplanId, string evenementId)
         {
             try
             {
@@ -124,10 +146,11 @@ namespace Persistentie
                 {
                     connection.Open();
 
-                    string deleteSQL = $"DELETE from DagplanEvenementen WHERE Id = @Id;";
+                    string deleteSQL = $"DELETE from DagplanEvenementen WHERE DagplanId = @dagplanId AND Id = @evenementId;";
 
                     SqlCommand deleteCommand = new(deleteSQL, connection);
-                    deleteCommand.Parameters.AddWithValue("@Id", EvenementId);
+                    deleteCommand.Parameters.AddWithValue("@dagplanId", dagplanId);
+                    deleteCommand.Parameters.AddWithValue("@evenementId", evenementId);
 
                     deleteCommand.ExecuteNonQuery();
                 }

@@ -27,5 +27,6 @@ namespace Domein.DTOs
         public DateTime Starttijd { get; set; }
         public decimal Prijs { get; set; }
         public string Beschrijving { get; set; }
+        public int rndId { get; set; }
     }
 }

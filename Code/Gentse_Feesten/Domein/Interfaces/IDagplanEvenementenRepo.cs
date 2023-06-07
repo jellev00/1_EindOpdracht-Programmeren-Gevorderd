@@ -13,6 +13,6 @@ namespace Domein.Interfaces
         List<DagplanEvenementenDTO> GeefEvenementenVanDagplan(int DagplanID);
         void AddEvenement(DagplanEvenementen dagplanEvenementen);
         void DeleteEvenementenOfDagplan(int dagplanId);
-        void DeleteEvenementVanDagplan(string EvenementId);
+        void DeleteEvenementVanDagplan(int dagplanId, string EvenementId);
     }
 }

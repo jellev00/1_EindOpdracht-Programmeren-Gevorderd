@@ -148,9 +148,9 @@ namespace Domein
             _repoDE.DeleteEvenementenOfDagplan(dagplanId);
         }
 
-        public void VerwijderEvenementVanDagplan(string evenementId)
+        public void VerwijderEvenementVanDagplan(int dagplanId, string evenementId)
         {
-            _repoDE.DeleteEvenementVanDagplan(evenementId);
+            _repoDE.DeleteEvenementVanDagplan(dagplanId, evenementId);
         }
 
         // De dagplannen van een gebruiker opvragen

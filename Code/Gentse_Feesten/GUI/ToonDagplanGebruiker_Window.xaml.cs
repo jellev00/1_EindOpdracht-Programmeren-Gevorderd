@@ -150,7 +150,7 @@ namespace GUI
 
             if (selectedEvenement != null)
             {
-                _dc.VerwijderEvenementVanDagplan(selectedEvenement.Id);
+                _dc.VerwijderEvenementVanDagplan(selectedEvenement.DagplanID, selectedEvenement.Id);
                 RefreshDagplanVanGebruikerOvervieuw();
             }
         }
