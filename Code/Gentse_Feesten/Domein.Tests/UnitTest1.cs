@@ -107,7 +107,9 @@ namespace Domein.Tests
 
             public List<DagplanEvenementenDTO> GeefEvenementenVanDagplan(int dagplanId)
             {
-                return new List<DagplanEvenementenDTO>();
+                //List<DagplanEvenementenDTO> evenement = new List<DagplanEvenementenDTO>();
+                //evenement.Add(new DagplanEvenementenDTO(1 ,"evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement."));
+                return evenementen;
             }
 
             public void DeleteEvenementVanDagplan(int dagplanId, string EvenementId)
@@ -165,6 +167,57 @@ namespace Domein.Tests
             var repoD = new FakeDagplanRepo();
             var repoDE = new FakeDagplanEvenementenRepo();
             var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
+            int dagplanId = 3;
+            int gebruikerId = 2;
+
+            // Haal het dagplan op uit de repository
+            Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
+
+
+            Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
+            EvenementDTO evenement = new EvenementDTO("evenement12", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
+
+            // Act
+            domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement);
+
+            // Assert
+        }
+
+        [Fact]
+        public void EvenementIsAlToegevoegd()
+        {
+            // Arrange
+            var repoE = new FakeEvenementenRepo();
+            var repoG = new FakeGebruikersRepo();
+            var repoD = new FakeDagplanRepo();
+            var repoDE = new FakeDagplanEvenementenRepo();
+            var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
+            int dagplanId = 1;
+            int gebruikerId = 2;
+
+            // Haal het dagplan op uit de repository
+            Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
+
+            Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
+            DagplanEvenementen evenement1 = new DagplanEvenementen(dagplanId, "evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
+            EvenementDTO evenement = new EvenementDTO("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
+
+            // Act
+            repoDE.AddEvenement(evenement1);
+
+            // Assert
+            Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement));
+        }
+
+        [Fact]
+        public void EvenementToegevoegdAanDagplan_minimum_30min_tussen()
+        {
+            // Arrange
+            var repoE = new FakeEvenementenRepo();
+            var repoG = new FakeGebruikersRepo();
+            var repoD = new FakeDagplanRepo();
+            var repoDE = new FakeDagplanEvenementenRepo();
+            var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
             int dagplanId = 1;
             int gebruikerId = 2;
 
@@ -173,91 +226,90 @@ namespace Domein.Tests
 
 
             Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
-            EvenementDTO evenement = new EvenementDTO("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
+            DagplanEvenementen evenement1 = new DagplanEvenementen(dagplanId, "evenement123", "Test Evenement", new DateTime(2022, 6, 6, 14, 0, 0), new DateTime(2022, 6, 6, 10, 0, 0), 10, "Dit is een test evenement.");
+            EvenementDTO evenement2 = new EvenementDTO("evenement1", "Test Evenement", new DateTime(2022, 6, 6, 16, 0, 0), new DateTime(2022, 6, 6, 14, 15, 0), 10, "Dit is een test evenement.");
 
             // Act
-            domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement);
+            repoDE.AddEvenement(evenement1);
 
             // Assert
+            Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement2));
         }
 
-        //[Fact]
-        //public void EvenementToegevoegdAanDagplan_minimum_30min_tussen()
-        //{
-        //    // Arrange
-        //    var repoE = new FakeEvenementenRepo();
-        //    var repoG = new FakeGebruikersRepo();
-        //    var repoD = new FakeDagplanRepo();
-        //    var repoDE = new FakeDagplanEvenementenRepo();
-        //    var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
-        //    int dagplanId = 1;
-        //    int gebruikerId = 2;
+        [Fact]
+        public void EvenementToegevoegdAanDagplan_overlapping()
+        {
+            // Arrange
+            var repoE = new FakeEvenementenRepo();
+            var repoG = new FakeGebruikersRepo();
+            var repoD = new FakeDagplanRepo();
+            var repoDE = new FakeDagplanEvenementenRepo();
+            var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
+            int dagplanId = 1;
+            int gebruikerId = 2;
 
-        //    // Haal het dagplan op uit de repository
-        //    Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
+            // Haal het dagplan op uit de repository
+            Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
+
+            Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
+            EvenementDTO evenement1 = new EvenementDTO("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
+            EvenementDTO evenement2 = new EvenementDTO("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 11, 30, 0), new DateTime(2022, 6, 6, 16, 0, 0), 10, "Dit is een test evenement.");
+
+            // Act
+            domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement1);
+
+            // Assert
+            Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement2));
+        }
+
+        [Fact]
+        public void EvenementToegevoegdAanDagplan_Dagbudget_overschreiden()
+        {
+            // Arrange
+            var repoE = new FakeEvenementenRepo();
+            var repoG = new FakeGebruikersRepo();
+            var repoD = new FakeDagplanRepo();
+            var repoDE = new FakeDagplanEvenementenRepo();
+            var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
+            int dagplanId = 3;
+            int gebruikerId = 2;
+
+            // Haal het dagplan op uit de repository
+            Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
 
 
-        //    Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
-        //    DagplanEvenementen evenement1 = new DagplanEvenementen(dagplanId, "evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
-        //    Evenement evenement2 = new Evenement("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 14, 15, 0), new DateTime(2022, 6, 6, 16, 0, 0), 10, "Dit is een test evenement.");
+            Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
+            EvenementDTO evenement = new EvenementDTO("evenement12", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 70, "Dit is een test evenement.");
 
-        //    // Act
-        //    repoDE.AddEvenement(evenement1);
+            // Act
 
-        //    // Assert
-        //    Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement2));
-        //}
+            // Assert
+            Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement));
+        }
 
-        //[Fact]
-        //public void EvenementToegevoegdAanDagplan_overlapping()
-        //{
-        //    // Arrange
-        //    var repoE = new FakeEvenementenRepo();
-        //    var repoG = new FakeGebruikersRepo();
-        //    var repoD = new FakeDagplanRepo();
-        //    var repoDE = new FakeDagplanEvenementenRepo();
-        //    var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
-        //    int dagplanId = 1;
-        //    int gebruikerId = 2;
+        [Fact]
+        public void EvenementToegevoegdAanDagplan_Evenement_niet_op_zelfde_datum_als_dagplan()
+        {
+            // Arrange
+            var repoE = new FakeEvenementenRepo();
+            var repoG = new FakeGebruikersRepo();
+            var repoD = new FakeDagplanRepo();
+            var repoDE = new FakeDagplanEvenementenRepo();
+            var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
+            int dagplanId = 3;
+            int gebruikerId = 2;
 
-        //    // Haal het dagplan op uit de repository
-        //    Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
+            // Haal het dagplan op uit de repository
+            Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
 
-        //    Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
-        //    Evenement evenement1 = new Evenement("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
-        //    Evenement evenement2 = new Evenement("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 11, 30, 0), new DateTime(2022, 6, 6, 16, 0, 0), 10, "Dit is een test evenement.");
 
-        //    // Act
-        //    domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement1);
+            Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
+            EvenementDTO evenement = new EvenementDTO("evenement12", "Test Evenement", new DateTime(2022, 6, 7, 10, 0, 0), new DateTime(2022, 6, 7, 14, 0, 0), 70, "Dit is een test evenement.");
 
-        //    // Assert
-        //    Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement2));
-        //}
+            // Act
 
-        //[Fact]
-        //public void EvenementIsAlToegevoegd()
-        //{
-        //    // Arrange
-        //    var repoE = new FakeEvenementenRepo();
-        //    var repoG = new FakeGebruikersRepo();
-        //    var repoD = new FakeDagplanRepo();
-        //    var repoDE = new FakeDagplanEvenementenRepo();
-        //    var domeinController = new DomeinController(repoE, repoG, repoD, repoDE);
-        //    int dagplanId = 1;
-        //    int gebruikerId = 2;
-
-        //    // Haal het dagplan op uit de repository
-        //    Dagplan dagplan = new Dagplan(dagplanId, gebruikerId, new DateTime(2022, 06, 06));
-
-        //    Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
-        //    DagplanEvenementen evenement1 = new DagplanEvenementen(dagplanId, "evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
-        //    Evenement evenement = new Evenement("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
-
-        //    // Act
-        //    repoDE.AddEvenement(evenement1);
-
-        //    // Assert
-        //    Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement));
-        //}
+            // Assert
+            Assert.Throws<DagplanException>(() => domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement));
+        }
     }
 }
