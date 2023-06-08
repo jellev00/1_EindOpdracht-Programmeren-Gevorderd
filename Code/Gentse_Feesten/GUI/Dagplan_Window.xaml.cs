@@ -78,7 +78,7 @@ namespace GUI
             int IDGebruiker = page_Gebruiker.GebruikersId();
             var dagplan = _dc.GeefDagplan(ID);
 
-            foreach (Evenement evenement in lvEvenement.SelectedItems)
+            foreach (EvenementDTO evenement in lvEvenement.SelectedItems)
             {
                 try
                 {

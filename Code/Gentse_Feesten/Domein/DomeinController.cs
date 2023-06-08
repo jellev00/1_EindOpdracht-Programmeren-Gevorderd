@@ -41,7 +41,7 @@ namespace Domein
             _repoD.AddDagplan(dagplan);
         }
 
-        public void VoegEvenementToeAanDagplan(int dagplanId, Evenement evenement)
+        public void VoegEvenementToeAanDagplan(int dagplanId, EvenementDTO evenement)
         {
             // Haal het dagplan en evenement op
             Dagplan dagplan = _repoD.GeefDagplan(dagplanId);
@@ -96,7 +96,7 @@ namespace Domein
             _repoDE.AddEvenement(dagplanEvenement);
         }
 
-        private bool OverlappingEvenementen(DagplanEvenementenDTO evenement1, Evenement evenement2)
+        private bool OverlappingEvenementen(DagplanEvenementenDTO evenement1, EvenementDTO evenement2)
         {
             return OverlappingEvenementen(evenement1, evenement2.Starttijd, evenement2.Eindtijd);
         }
@@ -109,7 +109,7 @@ namespace Domein
                    (evenement.Eindtijd > starttijd && evenement.Eindtijd <= eindtijd);
         }
 
-        private bool IsErMinstens30MinutenVerschil(int dagplanId, Evenement nieuwEvenement)
+        private bool IsErMinstens30MinutenVerschil(int dagplanId, EvenementDTO nieuwEvenement)
         {
             List<DagplanEvenementenDTO> evenementen = GeefEvenementenVanDagplan(dagplanId);
 
@@ -180,10 +180,10 @@ namespace Domein
                 .ToList();
         }
 
-        public List<Evenement> GeefEvenementen()
+        public List<EvenementDTO> GeefEvenementen()
         {
             return _repoE.GeefEvenementen()
-                .Select(evenement => new Evenement(evenement.Id, evenement.Titel, evenement.Eindtijd, evenement.Starttijd, evenement.Prijs, evenement.Beschrijving))
+                .Select(evenement => new EvenementDTO(evenement.Id, evenement.Titel, evenement.Eindtijd, evenement.Starttijd, evenement.Prijs, evenement.Beschrijving))
                 .ToList();
         }
 

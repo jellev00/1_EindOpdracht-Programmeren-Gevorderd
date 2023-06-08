@@ -1,4 +1,5 @@
 ﻿using Domein;
+using Domein.DTOs;
 using Domein.Exceptions;
 using Domein.Models;
 using System;
@@ -75,7 +76,7 @@ namespace GUI
             int ID = DagplanGebruiker.DagplanEvenementId();
             var dagplan = _dc.GeefDagplan(ID);
 
-            foreach (Evenement evenement in lvEvenement.SelectedItems)
+            foreach (EvenementDTO evenement in lvEvenement.SelectedItems)
             {
                 try
                 {

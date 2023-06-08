@@ -92,14 +92,21 @@ namespace GUI
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             DagplanDTO selectedDagplanDTO = lvDagplan.SelectedItem as DagplanDTO;
-            _SelectedDagplanID = selectedDagplanDTO.Id;
+            if (selectedDagplanDTO != null)
+            {
+                _SelectedDagplanID = selectedDagplanDTO.Id;
 
-            // Create the startup window
-            ToonDagplanGebruiker_Window ToonDagplanGebruikerW = new ToonDagplanGebruiker_Window(_dc);
-            // Do stuff here, e.g. to the window
-            ToonDagplanGebruikerW.Title = "Dagplan Gebruiker Info";
-            // Show the window
-            ToonDagplanGebruikerW.ShowDialog();
+                // Create the startup window
+                ToonDagplanGebruiker_Window ToonDagplanGebruikerW = new ToonDagplanGebruiker_Window(_dc);
+                // Do stuff here, e.g. to the window
+                ToonDagplanGebruikerW.Title = "Dagplan Gebruiker Info";
+                // Show the window
+                ToonDagplanGebruikerW.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Er is geen Dagplan geselecteerd of er is nog geen dagplan aan gemaakt voor deze gebruiker", "Dagplan Info", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
 
         int dagplanId = _SelectedDagplanID;

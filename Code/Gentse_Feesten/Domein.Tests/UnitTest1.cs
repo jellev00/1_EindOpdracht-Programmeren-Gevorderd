@@ -19,7 +19,7 @@ namespace Domein.Tests
 
             List<Evenement> IEvenementenRepo.GeefEvenementen()
             {
-                Evenement evenement = new Evenement("1", "Evenement 1", DateTime.Now, DateTime.Now.AddHours(1), 10, "Evenement 1 beschrijving");
+                Evenement evenement = new Evenement("1", "Evenement 1", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Evenement 1 beschrijving");
                 return new List<Evenement> { evenement };
             }
         }
@@ -173,7 +173,7 @@ namespace Domein.Tests
 
 
             Gebruiker gebruiker = new Gebruiker(gebruikerId, "Jelle", "Vandriessche", 60);
-            Evenement evenement = new Evenement("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
+            EvenementDTO evenement = new EvenementDTO("evenement123", "Test Evenement", new DateTime(2022, 6, 6, 10, 0, 0), new DateTime(2022, 6, 6, 14, 0, 0), 10, "Dit is een test evenement.");
 
             // Act
             domeinController.VoegEvenementToeAanDagplan(dagplanId, evenement);

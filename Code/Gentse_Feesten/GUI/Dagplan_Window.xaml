@@ -60,7 +60,7 @@
                             <Setter Property="CornerRadius" Value="10"/>
                         </Style>
                     </Button.Resources>
-                    Save Dagplan
+                    Ga terug
                 </Button>
             </StackPanel>
         </StackPanel>
